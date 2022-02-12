@@ -1,0 +1,18 @@
+<form [formGroup]="adminForm" (ngSubmit)="addVaccine()">
+  
+    <label for="name">username:</label>
+    <select
+    formControlName="username"
+    name="username"
+    class="form-control"
+    (change)="selectPatient()"> <!--new-->
+        <option *ngFor="let patient of patients"
+        [value]="patient.username">{{patient.username}}</option>    
+    </select>
+
+    <label for="dob">Date of Birth</label>
+    <input type="text" formControlName="dob"
+    name="dob"
+    class="form-control"
+    [value]="selectedData"/> <!--new-->
+</form>

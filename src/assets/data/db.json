@@ -1,0 +1,19 @@
+{
+  "patients": [
+    {
+      "id": 123,
+      "username": "yash",
+      "dob": "2022-02-01"
+    },
+    {
+      "username": "yash",
+      "dob": "2022-02-01",
+      "id": 124
+    },
+    {
+      "username": "harish",
+      "dob": "2022-02-10",
+      "id": 125
+    }
+  ]
+}
